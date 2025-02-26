@@ -1,0 +1,23 @@
+button {
+  max-width: min-content;
+  padding: 8px 16px;
+  border-radius: 12px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: blue;
+}
+button:active {
+  background-color: royalblue;
+}
+button:disabled {
+  background-color: lightgray;
+  color: gray;
+  cursor: not-allowed;
+}
+.active {
+  background-color: royalblue;
+}

@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  background-color: darkblue;
+  padding: 16px;
+  border-radius: 12px;
+}
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+header > div, strong {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 16px;
+  padding-left: 0;
+}
+ul > li {
+  border: 2px solid azure;
+  padding: 16px;
+  list-style: none;
+  border-radius: 22px;
+  background-color: darkslateblue;
+  margin: 0 10%;
+}
+.section {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
