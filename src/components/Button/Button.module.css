@@ -1,5 +1,5 @@
 button {
-  max-width: min-content;
+  min-width: fit-content;
   padding: 8px 16px;
   border-radius: 12px;
   background-color: darkblue;
