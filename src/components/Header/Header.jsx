@@ -1,6 +1,6 @@
 import vite from '../../assets/vite.svg'
 import react from '../../assets/react.svg'
-import { useState } from 'react'
+import {useEffect, useState} from 'react'
 import { styled } from 'styled-components'
 import './Header.module.css'
 
@@ -17,9 +17,10 @@ const HeaderContainer = styled.header`
 
 export default function Header() {
     const [now, setNow] = useState(new Date())
-    setInterval(() => {
-        setNow(new Date())
-    }, 1000)
+    useEffect(() => {
+        const interval = setInterval(() => setNow(new Date()), 1000)
+        return () => clearInterval(interval)
+    }, [])
     const name = 'logo'
     return (
         <header>

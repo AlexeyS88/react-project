@@ -1,5 +1,8 @@
+
 header > div, strong {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 8px;
 }
